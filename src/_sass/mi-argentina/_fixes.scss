@@ -1,0 +1,14 @@
+.media .bootstrap-switch {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .media {
+    .media-body {
+      display: initial;
+    }
+    .media-right {
+      padding: 15px 0 0 0 !important;
+    }
+  }
+}

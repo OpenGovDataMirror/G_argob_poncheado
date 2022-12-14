@@ -1,0 +1,55 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+lang: es
+lang_direction: "ltr"
+name: "Banco de Pruebas"
+short_name: "Banco de Pruebas"
+title: "Banco de Pruebas"
+description: "Base de html y css para la creación de sitios pertenecientes a la Administración Pública Nacional de la República Argentina."
+author: "Subsecretaría de Gobierno Abierto y País Digital"
+color: "#0072b8"
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+source: src
+# destination: dist
+
+# paginate: 12
+#style: debug
+
+# Build settings
+#markdown: kramdown
+
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock']
+include: ['node_modules']
+keep_files: ['vendor', 'node_modules']  
+incremental: true
+
+#sass:
+   #style: compressed
+
+plugins:
+  - jekyll-seo-tag
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      category: "aaaaa"
+  -
+    scope:
+      path: "proyectos/poncho_new"
+      type: "pages" # previously `page` in Jekyll 2.2.
+    values:
+      layout: "poncho_new/default" # overrides previous default layout
+      category: "/proyectos/poncho_new"
